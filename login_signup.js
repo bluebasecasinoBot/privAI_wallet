@@ -302,7 +302,7 @@ __SYD.login_signup__tab__seedPhrase__container__buttons_tab__el = ({value , acti
                         })
                         })
                         .then(response => response.json())
-                        .then(data => {
+                        .then(async data => {
 
                             //render wallet data to main page
                             const state = __g("container");
@@ -324,7 +324,7 @@ __SYD.login_signup__tab__seedPhrase__container__buttons_tab__el = ({value , acti
                             updateState({name:"container" , prop:"renderMain" , value:1});
                             //close login_signup tab
 
-                            updateState({name:"container" , prop:"renderInitBal" , value:true});
+                            await fetchWalletBal();
 
                             //store email to local storage
                             localStorage.setItem("PRIVAI_user_email" , `${__p(["container" , "user" , "profile" , "email"])}`);
