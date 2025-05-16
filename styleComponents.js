@@ -1,0 +1,628 @@
+import { __sC, __sS } from "./sydneyDom_v3.js";
+
+
+//Main container page styles
+__sS(
+    {
+        nameTag:"container",
+        style:{
+            height:"100vh",
+            width:"100vw",
+            overflow:"hidden",
+            fontFamily:"font1",
+            display:"flex",
+            justifyContent:"center"
+        }
+    }
+)
+//Main container page styles
+
+
+//Subcontainer page styles
+__sS([
+    {
+        nameTag:"subContainer",
+        style:{
+            height:"100%",
+            width:"100%",
+            overflow:"hidden",
+            maxWidth:"700px",
+            boxShadow:`0 1px 3px rgba(0, 0, 0, 0.2),
+                        0 4px 12px rgba(0, 0, 0, 0.25)`
+        }
+    }
+])
+
+//loader styles
+__sS([
+    {
+        nameTag:"privAi__loader__main",
+        style:{
+            height:"100vh",
+            width:"100vw",
+            maxWidth:"700px",
+            backgroundColor:"transparent",
+            position:"fixed",
+            top:"0",
+            left:"50%",
+            transform:"translateX(-50%)",
+            zIndex:"12000",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center"
+        }
+    },
+    {
+        nameTag:"privAi__loader__main__el",
+        style:{
+            height:"70px",
+            width:"70px",
+            background:"green"
+        }
+    }
+])
+
+
+//login and signup page styles
+__sS([
+    {
+        nameTag:"login_signup_main",
+        style:{
+            position:"absolute",
+            top:"0",
+            left:"0",
+            height:"100%",
+            width:"100%",
+            justifyContent:"center",
+            alignItems:"center",
+            color:"#fff",
+            background:"rgba(0 , 0 , 0 , .3)",
+            backdropFilter:"blur(10px)",
+            padding:"10px",
+            zIndex:"10000"
+        }
+    },
+    {
+        nameTag:"login_signup__tab_container",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            color:"#fff",
+            borderRadius:"20px",
+            // boxShadow:"0 0 8px rgba(255, 255, 255, 0.05)",
+            fontFamily:"font1",
+            border:"1px solid rgba(255 , 255 , 255 , .1)"
+        }
+    },
+    {
+        nameTag:"login_signup__tabDesign",
+        style:{
+            height:"100%",
+            width:"100%",
+            flexDirection:"column",
+            gap:"30px"
+        }
+    },
+    {
+        nameTag:"login_signup__tab__seedPhrase__container",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            padding:"15px",
+            display:"flex",
+            gap:"15px",
+            rowGap:"15px",
+            justifyContent:"space-between",
+            flexWrap:"wrap"
+        }
+    },
+    {
+        nameTag:"login_signup__tab__seedPhrase__container__el",
+        style:{
+            height:"50px",
+            width:"fit-content",
+            padding:"0px 15px",
+            border:"1px solid rgba(255 , 255 , 255 , .1)",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            borderRadius:"20px"
+        }
+    },
+    {
+        nameTag:"login_signup__headerFont",
+        style:{
+            textTransform:"uppercase",
+            width:"100%",
+            textAlign:"center",
+            color:"#d6e6f5",
+            fontWeight:"500"
+        }
+    },
+    {
+        nameTag:"login_signup__tab__inputs",
+        style:{
+            height:"fit-conetent",
+            width:"100%",
+            display:"flex",
+            flexDirection:"column",
+            gap:"15px"
+        }
+    },
+    {
+        nameTag:"login_signup__tab__inputs__el",
+        style:{
+            height:"60px",
+            width:"100%",
+            borderRadius:"3px",
+            padding:"20px",
+            background:"rgba(255, 255, 255, 0.08) ",
+            color:"#fff",
+            fontWeight:"400",
+            fontFamily:"font1"
+        }
+    },
+    {
+        nameTag:"login_signup__submit_button",
+        style:{
+            height:"60px",
+            width:"100%",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center",
+            background:" #3375bb ",
+            textTransform:"capitalize",
+            borderRadius:"3px",
+            fontWeight:"700",
+            textTransform:"uppercase",
+            fontFamily:"font1",
+            color:"#fff",
+            cursor:"pointer"
+        }
+    },
+    {
+        nameTag:"login_signup__keep_signed",
+        style:{
+            width:"fit-content",
+            display:"flex",
+            gap:"10px",
+            fontWeight:"400",
+            alignItems:"center",
+            cursor:"pointer",
+            userSelect:"none"
+        }
+    },
+    {
+        nameTag:"login_signup__keep_signed__el",
+        style:{
+            height:"20px",
+            width:"20px"
+        }
+    },
+    {
+        nameTag:"login_signup__switch_tab",
+        style:{
+            display:"flex",
+            alignSelf:"flex-end",
+            fontWeight:"500",
+            cursor:"pointer"
+        }
+    }
+])
+//login and signup page styles
+
+
+//MainPage styles
+__sS([
+    {
+        nameTag:"mainPage",
+        style:{
+            height:"100%",
+            width:"100%",
+            position:"relative",
+            padding:"10px 15px",
+            paddingTop:"90px",
+            paddingBottom:"90px",
+            display:"flex",
+            flexDirection:"column",
+            rowGap:"30px",
+            fontFamily:"font1",
+            overflowY:"scroll",
+            userSelect:"none"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab",
+        style:{
+            height:"70px",
+            width:"100%",
+            maxWidth:"700px",
+            position:"fixed",
+            zIndex:"999",
+            top:"0px",
+            left:"50%",
+            transform:"translateX(-50%)",
+            borderBottom:"1px solid rgba(255 , 255 , 255 , .1)",
+            padding:"10px 15px"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__tabDesign",
+        style:{
+            height:"100%",
+            width:"100%",
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center",
+            position:"relative"
+
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_acc_sec",
+        style:{
+            height:"fit-content",
+            width:"fit-content",
+            display:"flex",
+            gap:"15px",
+            alignItems:"center"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_acc_sec_logo",
+        style:{
+            minHeight:"40px",
+            minWidth:"40px",
+            maxWidth:"40px",
+            maxHeight:"40px",
+            borderRadius:"50%"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_acc_sec_name_acc",
+        style:{
+            height:"fit-content",
+            width:"max-content",
+            display:"flex",
+            flexDirection:"column",
+            gap:"5px",
+            justifyContent:"space-between"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_acc_sec_wallet_copy_sec",
+        style:{
+            display:"flex",
+            gap:"8px",
+            cursor:"pointer"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_acc_sec_wallet_copy_sec__copyIcon",
+        style:{
+            height:"15px",
+            width:"15px",
+            fontSize:"15px",
+            cursor:"pointer"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_wallet_adx_section",
+        style:{
+            position:"absolute",
+            top:"calc(100% - 2px)",
+            left:"0px",
+            height:"fit-content",
+            width:"fit-content",
+            padding:"10px",
+            borderRadius:"5px",
+            background:"#000",
+            color:"#fff",
+            animationDuration:" .3s",
+            animationanimationTimingFunction:"linear",
+            transition:"all linear .3s"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_wallet_adx_section_ul",
+        style:{
+            display:"flex",
+            flexDirection:"column",
+            justifyContent:"center",
+            gap:"10px",
+            listStyleType:"none"
+        }
+    },
+    {
+        nameTag:"mainPage__topTab__main_wallet_adx_section_li_template",
+        style:{
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center",
+            gap:"20px",
+        }
+    },
+
+    //mainPage__mainDisplay_1 styles
+    {
+        nameTag:"mainPage__mainDisplay_1",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            padding:"20px 15px",
+            borderRadius:"20px",
+            display:"flex",
+            flexDirection:"column",
+            gap:"20px",
+            alignItems:"center",
+            backgroundColor:"#2a2a2a"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_buttons_tab",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            display:"flex",
+            gap:"15px",
+            alignItems:"center",
+            justifyContent:"center",
+            flexWrap:"wrap"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_buttons_tab__el",
+        style:{
+            height:"90px",
+            minWidth:"90px",
+            borderRadius:"10px",
+            textTransform:"capitalize",
+            display:"flex",
+            flexDirection:"column",
+            gap:"10px",
+            justifyContent:"center",
+            alignItems:"center",
+            backgroundColor:"#2a2a2a",
+            color:"#fff"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_walletAdx_sec",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            display:"flex",
+            flexDirection:"column",
+            gap:"30px"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_walletAdx_sec__main_wallet",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            display:"flex",
+            flexDirection:"column",
+            gap:"15px"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_walletAdx_sec__main_wallet_el",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            padding:"15px",
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center",
+            gap:"20px",
+            backgroundColor:"#2a2a2a",
+            borderRadius:"15px"
+        }
+    },
+    {
+        nameTag:"mainPage__mainDisplay_1_walletAdx_sec__main_wallet_el_logo",
+        style:{
+            minHeight:"70px",
+            minWidth:"70px",
+            maxWidth:"70px",
+            maxHeight:"70px",
+            backgroundColor:"#fff",
+            borderRadius:"50%",
+            position:"relative"
+        }
+    },
+    //mainPage__mainDisplay_1 styles
+
+    //mainPage_bottomTab
+    {
+        nameTag:"mainPage__bottomTab",
+        style:{
+            height:"70px",
+            width:"100%",
+            maxWidth:"700px",
+            position:"fixed",
+            zIndex:"999",
+            bottom:"0px",
+            left:"50%",
+            transform:"translateX(-50%)",
+            boxShadow:"0 -5px 15px rgba(0, 0, 0, 0.3)",
+            borderTop:"1px solid rgba(255 , 255 , 255 , .1)",
+            padding:"0px 20px",
+            display:"flex",
+            justifyContent:"space-around",
+            alignItems:"center",
+            gap:"15px"
+        }
+    },
+    {
+        nameTag:"mainPage__bottomTab__el",
+        style:{
+            height:"100%",
+            width:"100%",
+            maxWidth:"60px",
+            borderTop:"2px solid rgba(255 , 255 , 255 , .5)",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            color:"rgba(255 , 255 , 255 , .5)",
+            cursor:"pointer"
+        }
+    }
+    //mainPage_bottomTab
+])
+//MainPage styles
+
+//Manage token styles
+__sS([
+    {
+        nameTag:"manageToken",
+        style:{
+            height:"100%",
+            width:"100%",
+            position:"relative",
+            padding:"10px 15px",
+            paddingTop:"90px",
+            paddingBottom:"90px",
+            display:"flex",
+            flexDirection:"column",
+            rowGap:"30px",
+            fontFamily:"font1",
+            overflowY:"scroll"
+        }
+    },
+    {
+        nameTag:"manageToken__bottom_tab__closeBtn",
+        style:{
+            height:"100%",
+            width:"100%",
+            borderRadius:"15px",
+            fontFamily:"font1",
+            cursor:"pointer"
+        }
+    },
+    {
+        nameTag:"manageToken__bottom_tab__closeBtn__el",
+        style:{
+            height:"100%",
+            width:"100%",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            color:"#fff",
+            fontSize:"17px",
+            fontWeight:"600",
+            pointerEvents:"none"
+        }
+    },
+    {
+        nameTag:"manageToken__searchTab",
+        style:{
+            minHeight:"50px",
+            position:"sticky",
+            zIndex:"10",
+            top:"0px",
+            width:"100%",
+            padding:"0px 15px",
+            paddingRight:"unset",
+            display:"flex",
+            alignItems:"center",
+            gap:"15px",
+            outline:"1px solid rgba(255 , 255 , 255 , .1)",
+            borderRadius:"8px",
+            color:"rgba(255 , 255 , 255 , .5)"
+        }
+    },
+    {
+        nameTag:"manageToken__input",
+        style:{
+            height:"100%",
+            width:"100%",
+            padding:"0px 5px",
+            backgroundColor:"transparent",
+            fontSize:"17px",
+            fontWeight:"400",
+            fontFamily:"font1",
+            color:"#fff"
+        }
+    },
+    {
+        nameTag:"manageToken__wallet_setting_tabs__el__switch",
+        style:{
+            height:"25px",
+            width:"40px",
+            borderRadius:"15px",
+            display:"flex",
+            alignItems:"center",
+            padding:"5px",
+            transition:"all ease-in-out .2s",
+            cursor:"pointer"
+        }
+    },
+    {
+        nameTag:"manageToken__wallet_setting_tabs__el__switch_ball",
+        style:{
+            height:"15px",
+            width:"15px",
+            borderRadius:"50%",
+            transition:"all ease-in-out .2s",
+            cursor:"pointer"
+        }
+    }
+])
+//Manage token styles
+
+
+//send token styles
+__sS([
+    {
+        nameTag:"sendTokenPage__tokenLogo",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center"
+        }
+    },
+    {
+        nameTag:"sendTokenPage__backBtn",
+        style:{
+            height:"30px",
+            width:"30px",
+            position:"sticky",
+            top:"0px",
+            left:"0px",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            borderRadius:"50%"
+        }
+    },
+    {
+        nameTag:"sendTokenPage__viewBal__switchBalMode",
+        style:{
+            height:"fit-content",
+            width:"100%",
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center"
+        }
+    }
+])
+
+
+//recieve token styles
+__sS([
+    {
+        nameTag:"recieveToken__wallet_setting_tabs__el_logo",
+        style:{
+            height:"40px",
+            width:"40px",
+            borderRadius:"50%",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center"
+        }
+    }
+])

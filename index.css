@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+::-webkit-scrollbar
+{
+  width: 0px;
+  height: 80%;
+	background-color: transparent;
+}
+::-webkit-scrollbar-track
+{
+  background:rgb(24, 24, 24);
+}
+p::-webkit-scrollbar-track
+{
+  background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color:#2a2a2a;
+  width: 3px;
+	border-radius: 20px;
+}
+::-webkit-scrollbar:hover ::-webkit-scrollbar-thumb{
+  width: 3px;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(./assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+.login_signup__input::placeholder
+{
+    color: #e6f1ff;
+}
+
+
+.fade_in_out__text
+{
+    opacity: .7;
+    transition: opacity linear .3s;
+}
+.fade_in_out__text:hover
+{
+    opacity: 1;
+}
+
+
+.tab_entry {
+  opacity: 0;
+  animation: fadeSlideIn 0.8s ease-out 0.2s forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.mainPage__topTab__main_wallet_adx_section_li_template_walletRef
+{
+  color: rgba(255 , 255 , 255 , .5);
+  cursor: pointer;
+  transition: color linear .3s;
+}
+
+.mainPage__topTab__main_wallet_adx_section_li_template_walletRef:hover
+{
+  color:#3375bb ;
+}
+
+.mainPage__topTab__main_acc_sec_wallet_copy_sec__cls{
+  opacity: .6;
+  transition: opacity linear .3s;
+}
+
+.mainPage__topTab__main_acc_sec_wallet_copy_sec__cls:hover
+{
+  opacity: 1;
+}
+
+.button_hover__sp1
+{
+  position: relative;
+  isolation: isolate;
+  cursor: pointer;
+}
+.button_hover__sp1::after
+{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100%;
+  border-radius: inherit;
+  background-color: rgba(255 , 255 , 255 , .08);
+  display: none;
+}
+.button_hover__sp1:hover.button_hover__sp1::after
+{
+  display: block;
+}
+
+.sendTokenPage__backBtn
+{
+  transition: all linear .2s;
+  cursor: pointer;
+}
+.sendTokenPage__backBtn:hover
+{
+  background-color: rgb(24, 24, 24);
+}
+
+
+/*Main tabs entry animation*/
+@keyframes base_tabEnter {
+  0% {
+    opacity: 0;
+    /* transform: translateY(30px); */
+    /* filter: blur(2px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+    /* filter: blur(0); */
+  }
+}
+
+.base__tabs {
+  animation: base_tabEnter .4s ease-out forwards;
+}
+
+
+.skeleton-loader {
+  position: relative;
+  /* isolation: isolate; */
+  width:50px;
+  height:20px;
+}
+
+.skeleton-loader-long {
+  position: relative;
+  /* isolation: isolate; */
+  width:100px;
+  height:20px;
+}
+
+.skeleton-loader::after , .skeleton-loader-long::after
+{
+  content: "";
+  position: absolute;
+  /* z-index: -1; */
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #3a3a3a 25%,
+    #4a4a4a 37%,
+    #3a3a3a 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.2s infinite;
+  height:100%;
+  width: 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+
+.docs__searchTab
+{
+  isolation: isolate;
+}
+
+
+.docs__searchTab::after
+{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
+  background:rgb(31 , 31 , 31);
+  height:100px;
+  width:100vw;
+}
