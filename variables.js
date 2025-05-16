@@ -41,18 +41,18 @@ export const def_token_obj = {
 }
 
 //API var
-SYD_VAR.getSeedPhrase_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_seed_phrase"});
-SYD_VAR.generateWallet_api = new SYD_VAR_constructor({value:"http://localhost:8080/generate_wallet"});
-SYD_VAR.emailAuth_api = new SYD_VAR_constructor({value:"http://localhost:8080/email_auth?email="});
-SYD_VAR.getWalletBal_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_wallet_bal"});
-SYD_VAR.get_wallet_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_wallet"});//serverapi-shy-field-2876.fly.dev
+// SYD_VAR.getSeedPhrase_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_seed_phrase"});
+// SYD_VAR.generateWallet_api = new SYD_VAR_constructor({value:"http://localhost:8080/generate_wallet"});
+// SYD_VAR.emailAuth_api = new SYD_VAR_constructor({value:"http://localhost:8080/email_auth?email="});
+// SYD_VAR.getWalletBal_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_wallet_bal"});
+// SYD_VAR.get_wallet_api = new SYD_VAR_constructor({value:"http://localhost:8080/get_wallet"});//serverapi-shy-field-2876.fly.dev
 //API var
 
 
 //API var production
-SYD_VAR.getSeedPhrase_api = new SYD_VAR_constructor({value:"https://serverapi-shy-field-2876.fly.dev/get_seed_phrase"});
-SYD_VAR.generateWallet_api = new SYD_VAR_constructor({value:"https://serverapi-shy-field-2876.fly.dev/generate_wallet"});
-SYD_VAR.emailAuth_api = new SYD_VAR_constructor({value:"https://serverapi-shy-field-2876.fly.dev/email_auth?email="});
-SYD_VAR.getWalletBal_api = new SYD_VAR_constructor({value:"https://serverapi-shy-field-2876.fly.dev/get_wallet_bal"});
-SYD_VAR.get_wallet_api = new SYD_VAR_constructor({value:"https://serverapi-shy-field-2876.fly.dev/get_wallet"});
+SYD_VAR.getSeedPhrase_api = new SYD_VAR_constructor({value:"https://serverapi-wispy-frog-3643.fly.dev/get_seed_phrase"});
+SYD_VAR.generateWallet_api = new SYD_VAR_constructor({value:"https://serverapi-wispy-frog-3643.fly.dev/generate_wallet"});
+SYD_VAR.emailAuth_api = new SYD_VAR_constructor({value:"https://serverapi-wispy-frog-3643.fly.dev/email_auth?email="});
+SYD_VAR.getWalletBal_api = new SYD_VAR_constructor({value:"https://serverapi-wispy-frog-3643.fly.dev/get_wallet_bal"});
+SYD_VAR.get_wallet_api = new SYD_VAR_constructor({value:"https://serverapi-wispy-frog-3643.fly.dev/get_wallet"});
 //API var production
