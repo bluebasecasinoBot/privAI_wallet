@@ -239,7 +239,7 @@ __SYD.login_signup__tab__seedPhrase__container__buttons_tab = () =>{
     return __c(
         "div",
         {
-            style:__sC["mainPage__bottomTab"]({method:"add" , style:{border:"unset" , position:"static" , paddingTop:"10px" , paddingBottom:"10px" , boxShadow:"unset"}}) + `background-color:${"transparent"};`
+            style:__sC["mainPage__bottomTab"]({method:"add" , style:{border:"unset" , position:"static" , paddingTop:"10px" , paddingBottom:"10px" , boxShadow:"unset"}}) + `left:0;transform:unset;background-color:${"transparent"};`
         },
         [
             __SYD.login_signup__tab__seedPhrase__container__buttons_tab__el({value:"copy phrase" , action:"copy"}),
@@ -323,6 +323,8 @@ __SYD.login_signup__tab__seedPhrase__container__buttons_tab__el = ({value , acti
                             //close login_signup tab
                             updateState({name:"container" , prop:"renderMain" , value:1});
                             //close login_signup tab
+
+                            updateState({name:"container" , prop:"renderInitBal" , value:true});
 
                             //store email to local storage
                             localStorage.setItem("PRIVAI_user_email" , `${__p(["container" , "user" , "profile" , "email"])}`);
